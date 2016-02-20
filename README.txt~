@@ -1,0 +1,17 @@
+hw1FindEigenDigits.m - The main function that calculates the Mean, Eigen Vectors and Eigen Values of the matrix. This is what is mentioned in the assignment.
+
+hw1main.m - A Matlab script to run PCA and then form the classification model and test its accuracy using another helper function. The script also contains 
+	a for loop to perform repeated tests in order to check accuracy by varying a single parameter. By changing the size of the varyingArray one can change
+	the number of times the for loop is run. One can use the varyingArray to assign different values to a certain parameter for each iteration of the for
+	loop.
+
+CalculateAccuracy.m - A Matlab function which takes in the projected training images and a set of test images to label. The funciton labels
+	the test images using a k-nn search algorithm and then checks whether the label is correct or incorrect to calculate the accuracy of the 
+	classification model.
+
+SelectTrainingSamples.m - A helper function which takes as input the trainingImages and outputs a subset of the training images that have been
+	reshaped in the format required for PCA. The range of the subset is accepted as input to the function.
+
+To run the code one needs to simply run the hw1main.m
+
+The variables are pretty self explanatory and can be changed to get different results.

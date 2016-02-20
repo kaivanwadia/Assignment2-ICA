@@ -12,6 +12,7 @@ XMatrix = AMatrix * UMatrix; %Generating the mixed signals matrix
 MixedSignals = XMatrix;
 WMatrix = 0.0 + (0.1 - 0.0) * rand(NumOriginalSignalsN, NumMixedSignalsM); %Initializing the initial weights matrix W
 for i = 1:RMaxIterations
+    % Performing Gradient Descent
     Y = WMatrix * XMatrix;
     Z = Gfunction(Y);
     I = eye(NumOriginalSignalsN);
